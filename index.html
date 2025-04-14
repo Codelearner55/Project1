@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Blue Black Team - Innovate, Create, Inspire">
+    <meta name="keywords" content="team, projects, innovation, technology">
+    <meta name="author" content="Blue Black Team">
+    <title>Blue Black Team</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #000;
+        }
+        header {
+            background-color: #000;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+        }
+        .hero {
+            background-color: #001f3f;
+            color: #fff;
+            text-align: center;
+            padding: 50px 20px;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            padding: 20px 0;
+        }
+        .projects, .team, .contact {
+            background-color: #fff;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .footer {
+            background-color: #000;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+        }
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .container {
+                width: 95%;
+            }
+            nav ul li {
+                display: block;
+                text-align: center;
+                margin: 10px 0;
+            }
+        }
+    </style>
+    <script>
+        function toggleMenu() {
+            let menu = document.getElementById("nav-menu");
+            menu.classList.toggle("show");
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Blue Black Team</h1>
+        <nav>
+            <ul id="nav-menu">
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#team">Team</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <button onclick="toggleMenu()">☰</button>
+        </nav>
+    </header>
+    
+    <section class="hero">
+        <h2>Welcome to the Blue Black Team</h2>
+        <p>We innovate, create, and inspire.</p>
+        <button onclick="alert('Thank you for joining!')">Join Us</button>
+    </section>
+    
+    <div class="container">
+        <section id="about">
+            <h2>About Us</h2>
+            <p>We are a team dedicated to pushing the boundaries of technology and innovation.</p>
+        </section>
+        
+        <section id="projects" class="projects">
+            <h2>Our Projects</h2>
+            <p>Explore our latest work.</p>
+        </section>
+        
+        <section id="team" class="team">
+            <h2>Meet the Team</h2>
+            <p>Get to know the people behind the projects.</p>
+        </section>
+        
+        <section id="contact" class="contact">
+            <h2>Contact Us</h2>
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required><br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required><br>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea><br>
+                <button type="submit">Send</button>
+            </form>
+        </section>
+    </div>
+    
+    <footer class="footer">
+        <p>&copy; 2025 Blue Black Team | Follow us on social media</p>
+    </footer>
+</body>
+</html>
